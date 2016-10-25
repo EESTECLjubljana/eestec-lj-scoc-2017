@@ -18,6 +18,7 @@
 }
 .bg-quote{
 	background-color: #fed136;
+	display: none;
 }
 .quote-pic{
 	max-width: 150px;
