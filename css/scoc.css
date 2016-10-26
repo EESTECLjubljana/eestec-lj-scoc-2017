@@ -1,3 +1,35 @@
+section{
+	padding: 50px 0;
+}
+
+.scoc-enlarge{
+	font-size:4em;
+}
+
+.scoc-enlarge-abit {
+	font-size:2em;
+	margin-top:-1em;
+	display:block;
+}
+
+.scoc-about-ul > li {
+	padding: 5px 0;
+}
+
+.scoc-infographics-colored {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color:#E3A20B;
+}
+
+.scoc-location-img-link {
+	width:250px;
+	height:250px;
+	display:block;
+	display:relative;
+}
+
 .supporters_middle{
 	padding-top: 20px;
 	display: block;
@@ -37,18 +69,20 @@
   }
 }
 
-    #ljGallery{
-      position:relative;
-      /*width:300px;  Set your image width */
-      /*height:220px;*/ /* Set your image height */
-      z-index:-1000;
-    }
-    #ljGallery img{
-      display:none;
-      position:absolute;
-      top:0;
-      left:0;
-    }
-    #ljGallery img.active{
-      display:block;
-    }
+#ljGallery{
+  position:relative;
+  /*width:300px;  Set your image width */
+  /*height:220px;*/ /* Set your image height */
+  z-index:-1000;
+}
+#ljGallery img{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+}
+#ljGallery img.active{
+  display:block;
+}
+
+
