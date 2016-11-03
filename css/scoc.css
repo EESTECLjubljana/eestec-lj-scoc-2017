@@ -33,6 +33,11 @@ section{
 	display:relative;
 }
 
+.scoc-img-fullscreen {
+	min-width: 100%;
+	max-width: 100%;
+}
+
 .overlay {
    background:transparent; 
    position:relative; 
