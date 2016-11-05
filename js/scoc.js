@@ -233,7 +233,7 @@ function initMapInt() {
     });
     markers["athens"] = new google.maps.Marker({
         map: map,
-        position: new google.maps.LatLng(33.9519347, -83.357567),
+        position: new google.maps.LatLng(37.9838100, 23.7275390),
         title: 'Athens'
     });
     google.maps.event.addListener(
@@ -557,7 +557,7 @@ function initMapInt() {
     });
     markers["east-sarajevo"] = new google.maps.Marker({
         map: map,
-        position: new google.maps.LatLng(43.8562586, 18.4130763),
+        position: new google.maps.LatLng(43.8217650, 18.3781430),
         title: 'East Sarajevo'
     });
     google.maps.event.addListener(
