@@ -19,13 +19,10 @@ $(document).ready(function() {
 function resizer() {
     var w = $(window).width();
     if (w < 975) {
-        console.log("resize");
+        // console.log("resize");
         $(".scoc-infographics-colored").css("webkit-border-bottom-left-radius", "0");
         $(".scoc-infographics-colored").css("border-bottom-left-radius", "0");
         $(".scoc-infographics-colored").css("moz-border-bottom-left-radius", "0");
-        isMobile = true;
-    } else { 
-        isMobile = false;
     }
 }
 
@@ -40,6 +37,7 @@ function initMapLj() {
         lng: 14.489226
     };
 
+    //global variable, so it can be used for changing center of maps when window is being resized
     var map = new google.maps.Map(document.getElementById('mapLj'), {
         zoom: 12,
         center: {
@@ -63,6 +61,18 @@ function initMapLj() {
     marker.addListener('click', function() {
         infowindow.open(map, marker);
     });
+
+	var center;
+	function calculateCenter() {
+	  center = map.getCenter();
+	}
+	google.maps.event.addDomListener(map, 'idle', function() {
+	  calculateCenter();
+	});
+
+    google.maps.event.addDomListener(window, 'resize', function() {
+    	map.setCenter(center);
+	});
 }
 
 /*Popup for map of all Commitments*/
