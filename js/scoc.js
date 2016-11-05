@@ -23,6 +23,10 @@ function resizer() {
         $(".scoc-infographics-colored").css("webkit-border-bottom-left-radius", "0");
         $(".scoc-infographics-colored").css("border-bottom-left-radius", "0");
         $(".scoc-infographics-colored").css("moz-border-bottom-left-radius", "0");
+    } else {
+    	$(".scoc-infographics-colored").css("webkit-border-bottom-left-radius", "20px");
+        $(".scoc-infographics-colored").css("border-bottom-left-radius", "20px");
+        $(".scoc-infographics-colored").css("moz-border-bottom-left-radius", "20px");
     }
 }
 
