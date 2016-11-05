@@ -24,6 +24,10 @@ section#contact {
 	background-color: none;
 }
 
+#contact a {
+	color:black;
+}
+
 .scoc-infographics-colored {
 	background-color:#E3A20B;
 	-webkit-border-radius: 30px;
