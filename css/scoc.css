@@ -21,10 +21,13 @@ section{
 }
 
 .scoc-infographics-colored {
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
 	background-color:#E3A20B;
+	-webkit-border-radius: 30px;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius: 30px;
+	-moz-border-radius-bottomright: 0;
+	border-radius: 30px;
+	border-bottom-right-radius: 0;
 }
 .scoc-location-img-link {
 	width:250px;
@@ -38,6 +41,19 @@ section{
 	max-width: 100%;
 }
 
+#intMapBtn {
+    background: #E3A20B;
+    float: right;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
 .overlay {
    background:transparent; 
    position:relative; 

@@ -37,16 +37,8 @@
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/scoc.css" rel="stylesheet">
 
-    <link href="css/fontello/scoc_fontello.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontello/animation.css">
-    <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Colorbox CSS -->
+    <link rel="stylesheet" href="vendor/colorbox-master/colorbox.css" />
 
 </head>
 
@@ -108,8 +100,9 @@
       -->
       <div id="ljGallery">
 	      <img class="scoc-img-fullscreen active" src="img/lj/ljubljana.jpg" />
-	      <img class="scoc-img-fullscreen" src="img/lj/ljubljana-city.jpg" />
 	      <img class="scoc-img-fullscreen" src="img/lj/ljubljana_night.jpg" />
+	      <img class="scoc-img-fullscreen" src="img/lj/ljubljana-castle.jpg" />
+	      <img class="scoc-img-fullscreen" src="img/lj/ljubljana-river-castle.jpg" />
       </div>
 
       <div class="container">
@@ -225,12 +218,12 @@
           	</p> -->
        <!--      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 col-sm-6 col-">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-university fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading scoc-enlarge">50</h4><span class="scoc-enlarge-abit">universities</span>
+            <h4 class="service-heading scoc-enlarge">49</h4><span class="scoc-enlarge-abit">universities</span>
 <!--           	<p>
           		<ul>
           			<li>
@@ -247,6 +240,12 @@
             <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
           </div>
         </div>
+        <div class="row">
+        	<div id="intMapBtn" class="btn text-muted col-md-8 col-xs-12 col-sm-12" title="EESTEC Commitments"><strong>Check the map</strong></div>
+        </div>
+
+        <!-- <div id="map" style="width:100%;height:400px;background:yellow">
+        </div> -->
 
       </div>
     </section>
@@ -277,7 +276,7 @@
           </div>
         </div>
         <div class="row text-center">
-          <a href="https://www.m-hotel.si/eng" target="blank">
+          <a href="https://www.m-hotel.si/eng" target="_blank">
           	<div class="col-md-4">
             <!-- <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -285,13 +284,13 @@
             </span> -->
 	            <img src="img/location/mhotel_black_gray.jpg" style="margin-top:0.8em; margin-bottom: 1.1em"/>
 	            <h4 class="service-heading">
-            		<a href="https://www.m-hotel.si/eng/" target="blank">M Hotel</a>
+            		<a href="https://www.m-hotel.si/eng/" target="_blank">M Hotel</a>
 	            </h4>
-	            <p class="text-muted text-justify">M hotel is a modern hotel near city center. It is a family company that cherishes good relations towards its guests and employees. They often voluntarily cooperate with nearby elementary school and other institutions, thus making them a perfect host for EESTEC volunteers. <a href="https://www.m-hotel.si/eng/">More...</a></p>
+	            <p class="text-muted text-justify">M hotel is a modern hotel near city center. It is a family company that cherishes good relations towards its guests and employees. They often voluntarily cooperate with nearby elementary school and other institutions, thus making them a perfect host for EESTEC volunteers. <a href="https://www.m-hotel.si/eng/" target="_blank">More...</a></p>
             
          	</div>
          </a>
-         <a href="http://www.ljubljana.si/en" target="blank">
+         <a href="http://www.ljubljana.si/en" target="_blank">
           <div class="col-md-4">
             <!-- <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -299,12 +298,12 @@
             </span> -->
             	<img src="img/location/mol_gray.jpg" />
             	<h4 class="service-heading">
-            	<a href="http://www.ljubljana.si/en" target="blank">Ljubljana</a>
+            	<a href="http://www.ljubljana.si/en" target="_blank">Ljubljana</a>
 	            </h4>
-	            <p class="text-muted text-justify">Ljubljana is the political and cultural heart of the Slovenian nation. It is an important European commercial, business, exhibition and congressional centre as well as the transport, science and education centre of Slovenia. It is also European Green Capital 2016. <a href="http://www.ljubljana.si/en" target="blank">More...</a></p>
+	            <p class="text-muted text-justify">Ljubljana is the political and cultural heart of the Slovenian nation. It is an important European commercial, business, exhibition and congressional centre as well as the transport, science and education centre of Slovenia. It is also European Green Capital 2016. <a href="http://www.ljubljana.si/en" target="_blank">More...</a></p>
           </div>
           </a>
-          <a href="http://www.slovenia.si/" target="blank">
+          <a href="http://www.slovenia.si/" target="_blank">
           <div class="col-md-4">
             <!-- <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -312,9 +311,9 @@
             </span> -->
             	<img src="img/location/slo.png" style="width:96px;height:118px;"/>
             	<h4 class="service-heading">
-            	<a href="http://www.slovenia.si/" target="blank">sLOVEnia</a>
+            	<a href="http://www.slovenia.si/" target="_blank">sLOVEnia</a>
 	            </h4>
-	            <p class="text-muted text-justify">Slovenia lies at the heart of Europe, where the Alps and the Mediterranean meet the Pannonian plains and the mysterious Karst. It is only country in the world that holds word LOVE in its name. Recently it was also declared as world's first green country. <a href="http://www.slovenia.si/" target="blank">More...</a></p>
+	            <p class="text-muted text-justify">Slovenia lies at the heart of Europe, where the Alps and the Mediterranean meet the Pannonian plains and the mysterious Karst. It is only country in the world that holds word LOVE in its name. Recently it was also declared as world's first green country. <a href="http://www.slovenia.si/" target="_blank">More...</a></p>
           </div>
           </a>
         </div>
@@ -323,7 +322,7 @@
         http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps 
         -->
         <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <div id="mapLj" style="width:100%;height:400px;background:yellow">
+        <div id="mapLj" style="width:100%;height:400px;background:white">
         </div>
       </div>
     </section>
@@ -388,28 +387,28 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-6">
-          	<a href="http://www.ljubljana.si/en" target="blank">
+          	<a href="http://www.ljubljana.si/en" target="_blank">
             	<img class="supporters_middle img-responsive" src="img/supporters/mol_napis_stojeci_gray.jpg" style="width:180px;" alt="City Municipality of Ljubljana" title="City Municipality of Ljubljana">
           	</a>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-6">
-          	<a href="https://www.uni-lj.si/eng/" target="blank">
+          	<a href="https://www.uni-lj.si/eng/" target="_blank">
             	<img class="supporters_middle img-responsive" src="img/supporters/ul.svg" style="width:128px;" alt="University of Ljubljana" title="University of Ljubljana" >
             </a>
           </div>
           <!-- <div class="clearfix"></div> -->
           <div class="col-lg-3 col-md-3 col-xs-6">
-          	<a href="http://www.fri.uni-lj.si/en" target="blank">
+          	<a href="http://www.fri.uni-lj.si/en" target="_blank">
             	<img class="supporters_middle img-responsive" src="img/supporters/fri_logo.svg" style="height:150px" alt="Faculty of Computer and Information Science" title="Faculty of Computer and Information Science">
             </a>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-6">
-          	<a href="http://www.fe.uni-lj.si/en/" target="blank">
+          	<a href="http://www.fe.uni-lj.si/en/" target="_blank">
             	<img class="supporters_middle img-responsive" src="img/supporters/fe_logo.svg" style="height:150px" alt="Faculty of electrical engineering" title="Faculty of electrical engineering">
             </a>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-6">
-          	<a href="http://komisp.si/" target="blank">
+          	<a href="http://komisp.si/" target="_blank">
             	<img class="supporters_middle img-responsive" src="img/supporters/komisp_logo.png" style="padding-top:25%;" alt="KOMISP, Zveza študentskih zvez in društev za mednarodno sodelovanje in izobraževanje" title="KOMISP, Zveza študentskih zvez in društev za mednarodno sodelovanje in izobraževanje">
             </a>
           </div>
@@ -503,31 +502,31 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li>
-                <a href="http://www.eestec-lj.org/" target="blank">
+                <a href="http://www.eestec-lj.org/" target="_blank">
                   <i class="fa fa-at"></i>
                 </a>
               </li>
 
               <li>
-                <a href="https://www.facebook.com/eestecLjubljana" target="blank">
+                <a href="https://www.facebook.com/eestecLjubljana" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
 
               <li>
-                <a href="https://twitter.com/eestecljubljana" target="blank">
+                <a href="https://twitter.com/eestecljubljana" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
 
               <li>
-                <a href="https://www.linkedin.com/company/eestec-lc-ljubljana" target="blank">
+                <a href="https://www.linkedin.com/company/eestec-lc-ljubljana" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
 
               <li>
-                <a href="https://www.youtube.com/channel/UCNMrP4-g0ybFaAVh_OWC_Cg" target="blank">
+                <a href="https://www.youtube.com/channel/UCNMrP4-g0ybFaAVh_OWC_Cg" target="_blank">
                   <i class="fa fa-youtube"></i>
                 </a>
               </li>
@@ -537,39 +536,11 @@
       </div>
     </footer>
 
-   
-
-    <script>
-      function initMap() {
-        var myLatLngMHotel = {lat:46.068634, lng: 14.489226};
-
-        var map = new google.maps.Map(document.getElementById('mapLj'), {
-          zoom: 12,
-          center: {lat: 
-46.087746, lng: 14.489912}
-        });
-
-        var infowindow = new google.maps.InfoWindow({
-          content: '<h6 style="margin:0; padding:0;">M Hotel</h6><p style="margin:0; padding:0; line-height: 1.1;">Derčeva ulica 4, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/M+Hotel/@46.0686304,14.4870343,17z/data=!3m1!4b1!4m5!3m4!1s0x476532b108e9c0d5:0xd4e08821c680fa04!8m2!3d46.068558!4d14.488737?hl=en" target="blank">Open in gmaps</a></p><img src="img/location/mhotel_zgradba.jpg" />'
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLngMHotel,
-          map: map,
-          title: 'M Hotel'
-        });
-
-		infowindow.open(map, marker);
-
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-
-      }
-    </script>
-
-    <!-- jQuery -->
+	<!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Colorbox popup -->
+    <script src="vendor/colorbox-master/jquery.colorbox-min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -583,10 +554,8 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX9ghtfPYFxCZZ6JbmdBYeZcoBQZLwakA&callback=initMap&language=en">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX9ghtfPYFxCZZ6JbmdBYeZcoBQZLwakA&callback=initMapLj&language=en">
     </script>
-
 
 </body>
 
