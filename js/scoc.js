@@ -84,8 +84,8 @@ $(document).ready(function() {
     $("#intMapBtn").colorbox({
         html: '<div id="map" style="width:100%;height:100%;"></div>',
         scrolling: false,
-        width: "50%",
-        height: "60%",
+        width: "60%",
+        height: "70%",
         onComplete: function() {
             initMapInt();
         }
@@ -99,7 +99,7 @@ function initMapInt() {
     }
     var map, cfg = {
         zoom: 4,
-        lat: 47.5,
+        lat: 51.5,
         lng: 19.07,
         streetViewControl: false,
         mapTypeControl: false,

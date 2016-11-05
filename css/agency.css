@@ -551,14 +551,14 @@ section h3.section-subheading {
   margin-top: 0;
 }
 section#contact {
-  color: white;
-  background-color: #222222;
+  color: black;
+  /*background-color: #222222;*/
   /*background-image: url('../img/map-image.png');*/
   background-position: center;
   background-repeat: no-repeat;
 }
 section#contact .section-heading {
-  color: white;
+  color: black;
 }
 section#contact .section-subheading {
   margin-bottom: 20px;
