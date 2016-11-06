@@ -11,7 +11,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #fed136;
+  color: #029a58;
 }
 p {
   font-size: 14px;
@@ -28,13 +28,14 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #029a58;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  /*color: #029a58;*/
+  color: rgb(11,171,100);
 }
 h1,
 h2,
@@ -57,8 +58,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #029a58;
+  border-color: #029a58;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +70,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: rgb(11,171,100);
+  /*border-color: #f6bf01;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +93,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: rgb(11,171,100);
+  border-color: rgb(11,171,100);
 }
 .btn-primary .badge {
-  color: #fed136;
+  color: #029a58;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #029a58;
+  /*border-color: #029a58;*/
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -116,8 +117,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
+  /*border-color: #f6bf01;*/
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -139,11 +141,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
+  /*border-color: #029a58;*/
 }
 .btn-xl .badge {
-  color: #fed136;
+  color: #029a58;
   background-color: white;
 }
 .navbar-custom {
@@ -151,21 +154,21 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #fed136;
+  color: #029a58;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #029a58;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #029a58;
+  border-color: #029a58;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -173,7 +176,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -184,18 +188,21 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fed136;
+  /*color: #029a58;*/
+  color: rgb(11,171,100);
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -421,7 +428,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: #029a58;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -603,7 +610,8 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  /*background-color: #029a58;*/
+  background-color: rgb(11,171,100);
 }
 .btn:focus,
 .btn:active,
@@ -687,11 +695,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136;
+  background: #029a58;
 }
 ::selection {
   text-shadow: none;
-  background: #fed136;
+  background: #029a58;
 }
 img::selection {
   background: transparent;
@@ -700,5 +708,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #fed136;
+  webkit-tap-highlight-color: #029a58;
 }
