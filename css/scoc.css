@@ -44,6 +44,14 @@ section#contact {
 	display:relative;
 }
 
+.first_page_background_highlight {
+	background-color: rgba(2,154,88, 0.75)
+}
+
+.scoc-location-sizes {
+	font-size: 1.3em;
+}
+
 .scoc-img-fullscreen {
 	min-width: 100%;
 	max-width: 100%;
