@@ -1,23 +1,30 @@
-/*Swapping images on "home  screen"*/
-function swapImages() {
-    var $current = $('#ljGallery img:visible');
-    var $next = $current.next();
-    if ($next.length === 0) {
-        $next = $('#ljGallery img:first');
-    }
-    // $current.hide();
-    // $next.show();
-    $current.fadeOut(800);
-    $next.fadeIn(800);
-}
-
-$(document).ready(function() {
-    // Run our swapImages() function every 4 secs
-    setInterval(swapImages, 4000);
+$(window).load(function () {
+    var i = 0;
+    var images = [
+        'img/lj/ljubljana.jpg',
+        'img/lj/ljubljana_night.jpg',
+        'img/lj/ljubljana-castle.jpg',
+        'img/lj/ljubljana-river-castle.jpg'];
+    $('#ljGalleryDiv').css('background-image', 'url(' + images[i] + ')');
+    setInterval(function () {
+        if (++i === images.length) {
+            i = 0;
+        }
+        // console.log(i);
+        $('#ljGalleryDivNext').css('background-image', 'url(' + images[i] + ')');
+        // transition animation: 2s
+        $('#ljGalleryDiv').fadeOut(2000, function () {
+            $('#ljGalleryDiv').css('background-image', 'url(' + images[i] + ')').show();
+        });
+        // slide change: 3s
+    }, 4000);
 });
 
 function resizer() {
     var w = $(window).width();
+    $("#ljGalleryDiv").css("height", $(window).height());
+    $("#ljGalleryDivNext").css("height", $(window).height());
+    $("header").css("height", $(window).height());
     if (w < 975) {
         // console.log("resize");
         $(".scoc-infographics-colored").css("webkit-border-bottom-left-radius", "0");
