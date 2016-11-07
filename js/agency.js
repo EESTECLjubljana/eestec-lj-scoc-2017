@@ -1,5 +1,3 @@
-// Agency Theme JavaScript
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -12,7 +10,7 @@
         event.preventDefault();
     });
 
-    Highlight the top nav as scrolling occurs
+    // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
