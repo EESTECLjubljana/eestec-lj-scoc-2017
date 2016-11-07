@@ -84,8 +84,8 @@ $(document).ready(function() {
     $("#intMapBtn").colorbox({
         html: '<div id="map" style="width:100%;height:100%;"></div>',
         scrolling: false,
-        width: "60%",
-        height: "70%",
+        width: "80%",
+        height: "80%",
         onComplete: function() {
             initMapInt();
         }

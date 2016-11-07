@@ -694,18 +694,18 @@ ul.social-buttons li a:active {
   display: none;
 }
 ::-moz-selection {
-  text-shadow: none;
-  background: #029a58;
+ /* text-shadow: none;
+  background: #029a58;*/
 }
 ::selection {
-  text-shadow: none;
-  background: #029a58;
+  /*text-shadow: none;*/
+  /*background: #000;*/
 }
 img::selection {
-  background: transparent;
+  /*background: transparent;*/
 }
 img::-moz-selection {
-  background: transparent;
+  /*background: transparent;*/
 }
 body {
   webkit-tap-highlight-color: #029a58;
