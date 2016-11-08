@@ -63,7 +63,7 @@ function initMapLj() {
 
     var marker = new google.maps.Marker({
         position: myLatLngMHotel,
-        map: map,
+        map: mapIntLcs,
         title: 'M Hotel'
     });
 
@@ -103,8 +103,8 @@ $(document).ready(function() {
 function initMapInt() {
     if (!window.google) {
         return;
-    }
-    var map, cfg = {
+    } 
+    var cfg = {
         zoom: 4,
         lat: 51.5,
         lng: 19.07,
@@ -113,8 +113,8 @@ function initMapInt() {
         mapTypeId: window.google && google.maps.MapTypeId.ROADMAP
     };
 
-    map = window.map = new google.maps.Map(document.getElementById("map"), cfg);
-    map.setCenter(new google.maps.LatLng(cfg.lat, cfg.lng));
+    mapIntLcs = window.map = new google.maps.Map(document.getElementById("map"), cfg);
+    mapIntLcs.setCenter(new google.maps.LatLng(cfg.lat, cfg.lng));
 
     var infowins = {},
         markers = {},
@@ -131,7 +131,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["aachen"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(50.7753455, 6.0838868),
         title: 'Aachen'
     });
@@ -144,7 +144,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["aachen"];
-            latest.open(map, markers["aachen"]);
+            latest.open(mapIntLcs, markers["aachen"]);
         }
     );
 
@@ -158,7 +158,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["almeria"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(36.834047, -2.4637136),
         title: 'Almeria'
     });
@@ -171,7 +171,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["almeria"];
-            latest.open(map, markers["almeria"]);
+            latest.open(mapIntLcs, markers["almeria"]);
         }
     );
 
@@ -185,7 +185,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["ankara"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(39.9333635, 32.8597419),
         title: 'Ankara'
     });
@@ -198,7 +198,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["ankara"];
-            latest.open(map, markers["ankara"]);
+            latest.open(mapIntLcs, markers["ankara"]);
         }
     );
 
@@ -212,7 +212,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["antwerp"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(51.2194475, 4.4024643),
         title: 'Antwerp'
     });
@@ -225,7 +225,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["antwerp"];
-            latest.open(map, markers["antwerp"]);
+            latest.open(mapIntLcs, markers["antwerp"]);
         }
     );
 
@@ -239,7 +239,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["athens"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(37.9838100, 23.7275390),
         title: 'Athens'
     });
@@ -252,7 +252,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["athens"];
-            latest.open(map, markers["athens"]);
+            latest.open(mapIntLcs, markers["athens"]);
         }
     );
 
@@ -266,7 +266,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["aveiro"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(40.6405055, -8.6537539),
         title: 'Aveiro'
     });
@@ -279,7 +279,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["aveiro"];
-            latest.open(map, markers["aveiro"]);
+            latest.open(mapIntLcs, markers["aveiro"]);
         }
     );
 
@@ -293,7 +293,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["banja-luka"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(44.7721811, 17.191),
         title: 'Banja Luka'
     });
@@ -306,7 +306,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["banja-luka"];
-            latest.open(map, markers["banja-luka"]);
+            latest.open(mapIntLcs, markers["banja-luka"]);
         }
     );
 
@@ -320,7 +320,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["belgrade"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(44.786568, 20.4489216),
         title: 'Belgrade'
     });
@@ -333,7 +333,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["belgrade"];
-            latest.open(map, markers["belgrade"]);
+            latest.open(mapIntLcs, markers["belgrade"]);
         }
     );
 
@@ -347,7 +347,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["bucharest"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(44.4267674, 26.1025384),
         title: 'Bucharest'
     });
@@ -360,7 +360,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["bucharest"];
-            latest.open(map, markers["bucharest"]);
+            latest.open(mapIntLcs, markers["bucharest"]);
         }
     );
 
@@ -374,7 +374,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["budapest"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(47.497912, 19.040235),
         title: 'Budapest'
     });
@@ -387,7 +387,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["budapest"];
-            latest.open(map, markers["budapest"]);
+            latest.open(mapIntLcs, markers["budapest"]);
         }
     );
 
@@ -401,7 +401,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["bursa"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(40.1885281, 29.0609636),
         title: 'Bursa'
     });
@@ -414,7 +414,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["bursa"];
-            latest.open(map, markers["bursa"]);
+            latest.open(mapIntLcs, markers["bursa"]);
         }
     );
 
@@ -428,7 +428,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["catania"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(37.5078772, 15.0830304),
         title: 'Catania'
     });
@@ -441,7 +441,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["catania"];
-            latest.open(map, markers["catania"]);
+            latest.open(mapIntLcs, markers["catania"]);
         }
     );
 
@@ -455,7 +455,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["chemnitz"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(50.827845, 12.9213697),
         title: 'Chemnitz'
     });
@@ -468,7 +468,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["chemnitz"];
-            latest.open(map, markers["chemnitz"]);
+            latest.open(mapIntLcs, markers["chemnitz"]);
         }
     );
 
@@ -482,7 +482,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["cosenza"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(39.2982629, 16.2537357),
         title: 'Cosenza'
     });
@@ -495,7 +495,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["cosenza"];
-            latest.open(map, markers["cosenza"]);
+            latest.open(mapIntLcs, markers["cosenza"]);
         }
     );
 
@@ -509,7 +509,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["craiova"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(44.3301785, 23.7948808),
         title: 'Craiova'
     });
@@ -522,7 +522,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["craiova"];
-            latest.open(map, markers["craiova"]);
+            latest.open(mapIntLcs, markers["craiova"]);
         }
     );
 
@@ -536,7 +536,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["delft"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(52.0115769, 4.3570677),
         title: 'Delft'
     });
@@ -549,7 +549,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["delft"];
-            latest.open(map, markers["delft"]);
+            latest.open(mapIntLcs, markers["delft"]);
         }
     );
 
@@ -563,7 +563,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["east-sarajevo"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(43.8217650, 18.3781430),
         title: 'East Sarajevo'
     });
@@ -576,7 +576,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["east-sarajevo"];
-            latest.open(map, markers["east-sarajevo"]);
+            latest.open(mapIntLcs, markers["east-sarajevo"]);
         }
     );
 
@@ -590,7 +590,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["eskisehir"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(39.7667061, 30.5256311),
         title: 'Eskisehir'
     });
@@ -603,7 +603,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["eskisehir"];
-            latest.open(map, markers["eskisehir"]);
+            latest.open(mapIntLcs, markers["eskisehir"]);
         }
     );
 
@@ -617,7 +617,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["gdansk"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(54.3520252, 18.6466384),
         title: 'Gdansk'
     });
@@ -630,7 +630,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["gdansk"];
-            latest.open(map, markers["gdansk"]);
+            latest.open(mapIntLcs, markers["gdansk"]);
         }
     );
 
@@ -644,7 +644,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["gliwice"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(50.2944923, 18.6713802),
         title: 'Gliwice'
     });
@@ -657,7 +657,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["gliwice"];
-            latest.open(map, markers["gliwice"]);
+            latest.open(mapIntLcs, markers["gliwice"]);
         }
     );
 
@@ -671,7 +671,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["hamburg"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(53.5510846, 9.9936818),
         title: 'Hamburg'
     });
@@ -684,7 +684,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["hamburg"];
-            latest.open(map, markers["hamburg"]);
+            latest.open(mapIntLcs, markers["hamburg"]);
         }
     );
 
@@ -698,7 +698,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["istanbul"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(41.0082376, 28.9783589),
         title: 'Istanbul'
     });
@@ -711,7 +711,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["istanbul"];
-            latest.open(map, markers["istanbul"]);
+            latest.open(mapIntLcs, markers["istanbul"]);
         }
     );
 
@@ -725,7 +725,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["izmir"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(38.423734, 27.142826),
         title: 'Izmir'
     });
@@ -738,7 +738,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["izmir"];
-            latest.open(map, markers["izmir"]);
+            latest.open(mapIntLcs, markers["izmir"]);
         }
     );
 
@@ -752,7 +752,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["kaiserslautern"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(49.4400657, 7.7491265),
         title: 'Kaiserslautern'
     });
@@ -765,7 +765,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["kaiserslautern"];
-            latest.open(map, markers["kaiserslautern"]);
+            latest.open(mapIntLcs, markers["kaiserslautern"]);
         }
     );
 
@@ -779,7 +779,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["karlsruhe"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(49.0068901, 8.4036527),
         title: 'Karlsruhe'
     });
@@ -792,7 +792,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["karlsruhe"];
-            latest.open(map, markers["karlsruhe"]);
+            latest.open(mapIntLcs, markers["karlsruhe"]);
         }
     );
 
@@ -806,7 +806,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["krakow"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(50.0646501, 19.9449799),
         title: 'Krakow'
     });
@@ -819,7 +819,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["krakow"];
-            latest.open(map, markers["krakow"]);
+            latest.open(mapIntLcs, markers["krakow"]);
         }
     );
 
@@ -833,7 +833,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["lille"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(50.62925, 3.057256),
         title: 'Lille'
     });
@@ -846,7 +846,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["lille"];
-            latest.open(map, markers["lille"]);
+            latest.open(mapIntLcs, markers["lille"]);
         }
     );
 
@@ -860,7 +860,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["linkoping"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(58.410807, 15.6213727),
         title: 'Linköping'
     });
@@ -873,7 +873,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["linkoping"];
-            latest.open(map, markers["linkoping"]);
+            latest.open(mapIntLcs, markers["linkoping"]);
         }
     );
 
@@ -887,7 +887,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["lisbon"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(38.7222524, -9.1393366),
         title: 'Lisbon'
     });
@@ -900,7 +900,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["lisbon"];
-            latest.open(map, markers["lisbon"]);
+            latest.open(mapIntLcs, markers["lisbon"]);
         }
     );
 
@@ -914,7 +914,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["ljubljana"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(46.0569465, 14.5057515),
         title: 'Ljubljana'
     });
@@ -927,7 +927,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["ljubljana"];
-            latest.open(map, markers["ljubljana"]);
+            latest.open(mapIntLcs, markers["ljubljana"]);
         }
     );
 
@@ -941,7 +941,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["madrid"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(40.4167754, -3.7037902),
         title: 'Madrid'
     });
@@ -954,7 +954,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["madrid"];
-            latest.open(map, markers["madrid"]);
+            latest.open(mapIntLcs, markers["madrid"]);
         }
     );
 
@@ -968,7 +968,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["munich"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(48.1351253, 11.5819806),
         title: 'Munich'
     });
@@ -981,7 +981,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["munich"];
-            latest.open(map, markers["munich"]);
+            latest.open(mapIntLcs, markers["munich"]);
         }
     );
 
@@ -995,7 +995,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["nis"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(43.3209022, 21.8957589),
         title: 'Niš'
     });
@@ -1008,7 +1008,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["nis"];
-            latest.open(map, markers["nis"]);
+            latest.open(mapIntLcs, markers["nis"]);
         }
     );
 
@@ -1022,7 +1022,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["novi-sad"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(45.2671352, 19.8335496),
         title: 'Novi Sad'
     });
@@ -1035,7 +1035,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["novi-sad"];
-            latest.open(map, markers["novi-sad"]);
+            latest.open(mapIntLcs, markers["novi-sad"]);
         }
     );
 
@@ -1049,7 +1049,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["patras"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(38.2466395, 21.734574),
         title: 'Patras'
     });
@@ -1062,7 +1062,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["patras"];
-            latest.open(map, markers["patras"]);
+            latest.open(mapIntLcs, markers["patras"]);
         }
     );
 
@@ -1076,7 +1076,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["podgorica"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(42.4304196, 19.2593642),
         title: 'Podgorica'
     });
@@ -1089,7 +1089,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["podgorica"];
-            latest.open(map, markers["podgorica"]);
+            latest.open(mapIntLcs, markers["podgorica"]);
         }
     );
 
@@ -1103,7 +1103,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["riga"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(56.9496487, 24.1051864),
         title: 'Riga'
     });
@@ -1116,7 +1116,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["riga"];
-            latest.open(map, markers["riga"]);
+            latest.open(mapIntLcs, markers["riga"]);
         }
     );
 
@@ -1130,7 +1130,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["sarajevo"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(43.8562586, 18.4130763),
         title: 'Sarajevo'
     });
@@ -1143,7 +1143,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["sarajevo"];
-            latest.open(map, markers["sarajevo"]);
+            latest.open(mapIntLcs, markers["sarajevo"]);
         }
     );
 
@@ -1157,7 +1157,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["skopje"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(41.9973462, 21.4279956),
         title: 'Skopje'
     });
@@ -1170,7 +1170,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["skopje"];
-            latest.open(map, markers["skopje"]);
+            latest.open(mapIntLcs, markers["skopje"]);
         }
     );
 
@@ -1184,7 +1184,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["split"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(43.5081323, 16.4401935),
         title: 'Split'
     });
@@ -1197,7 +1197,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["split"];
-            latest.open(map, markers["split"]);
+            latest.open(mapIntLcs, markers["split"]);
         }
     );
 
@@ -1211,7 +1211,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["strumica"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(41.4378004, 22.6427428),
         title: 'Strumica'
     });
@@ -1224,7 +1224,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["strumica"];
-            latest.open(map, markers["strumica"]);
+            latest.open(mapIntLcs, markers["strumica"]);
         }
     );
 
@@ -1238,7 +1238,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["tampere"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(61.4977524, 23.7609535),
         title: 'Tampere'
     });
@@ -1251,7 +1251,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["tampere"];
-            latest.open(map, markers["tampere"]);
+            latest.open(mapIntLcs, markers["tampere"]);
         }
     );
 
@@ -1265,7 +1265,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["thessaloniki"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(40.6400629, 22.9444191),
         title: 'Thessaloniki'
     });
@@ -1278,7 +1278,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["thessaloniki"];
-            latest.open(map, markers["thessaloniki"]);
+            latest.open(mapIntLcs, markers["thessaloniki"]);
         }
     );
 
@@ -1292,7 +1292,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["tirana"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(41.3275459, 19.8186982),
         title: 'Tirana'
     });
@@ -1305,7 +1305,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["tirana"];
-            latest.open(map, markers["tirana"]);
+            latest.open(mapIntLcs, markers["tirana"]);
         }
     );
 
@@ -1319,7 +1319,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["trieste"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(45.6495264, 13.7768182),
         title: 'Trieste'
     });
@@ -1332,7 +1332,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["trieste"];
-            latest.open(map, markers["trieste"]);
+            latest.open(mapIntLcs, markers["trieste"]);
         }
     );
 
@@ -1346,7 +1346,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["tuzla"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(44.5374611, 18.6734688),
         title: 'Tuzla'
     });
@@ -1359,7 +1359,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["tuzla"];
-            latest.open(map, markers["tuzla"]);
+            latest.open(mapIntLcs, markers["tuzla"]);
         }
     );
 
@@ -1373,7 +1373,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["xanthi"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(41.1300361, 24.8864902),
         title: 'Xanthi'
     });
@@ -1386,7 +1386,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["xanthi"];
-            latest.open(map, markers["xanthi"]);
+            latest.open(mapIntLcs, markers["xanthi"]);
         }
     );
 
@@ -1400,7 +1400,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["zagreb"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(45.8150108, 15.981919),
         title: 'Zagreb'
     });
@@ -1413,7 +1413,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["zagreb"];
-            latest.open(map, markers["zagreb"]);
+            latest.open(mapIntLcs, markers["zagreb"]);
         }
     );
 
@@ -1427,7 +1427,7 @@ function initMapInt() {
         maxWidth: 250
     });
     markers["zurich"] = new google.maps.Marker({
-        map: map,
+        map: mapIntLcs,
         position: new google.maps.LatLng(47.3768866, 8.541694),
         title: 'Zurich'
     });
@@ -1440,7 +1440,7 @@ function initMapInt() {
             if (latest)
                 latest.close();
             latest = infowins["zurich"];
-            latest.open(map, markers["zurich"]);
+            latest.open(mapIntLcs, markers["zurich"]);
         }
     );
 

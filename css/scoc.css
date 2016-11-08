@@ -113,9 +113,59 @@ section#contact {
 	color: white;
 }
 
+
+.scoc-logo {
+	max-width: 150px;
+	margin-top: -12px;
+}
+
+.affix {
+	padding: 10px 0;
+}
+
+@media (min-width: 615px) {
+  .navbar-right {
+  	font-size: 0.69em;
+  	margin-top: 6px;
+  }
+
+  .navbar-custom .nav li a {
+    padding: 10px 7px;
+  }
+}
+
 @media (min-width: 768px) {
   .section-min-padding {
     padding: 50px 0;
+  }
+
+	.scoc-logo {	
+		max-width: 176px;
+    	margin-top: -18px;
+	}
+
+	.navbar-custom.affix {
+		padding: 20px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	#ljGalleryDiv, #ljGalleryDivNext {
+		top: 70px;
+	}
+
+	.scoc-logo {
+		max-width: 192px;
+		margin-top: -20px;
+	}
+
+  .navbar-right {
+  	font-size: 0.98em;
+  	margin-top: 0;
+  }
+
+  .navbar-custom .nav li a {
+    padding: 15px 10px;
   }
 }
 
@@ -130,11 +180,6 @@ section#contact {
     height: 100%;
 }
 
-@media (min-width: 768px) {
-	#ljGalleryDiv, #ljGalleryDivNext {
-		top: 70px;
-	}
-}
 #ljGalleryDiv {
     z-index: -1000;
 }
