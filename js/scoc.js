@@ -22,9 +22,13 @@ $(window).load(function () {
 
 function resizer() {
     var w = $(window).width();
-    $("#ljGalleryDiv").css("height", $(window).height());
-    $("#ljGalleryDivNext").css("height", $(window).height());
-    $("header").css("height", $(window).height());
+    var h = $(window).height();
+    if (h < 470) {
+    	h = 470;
+    }
+    $("#ljGalleryDiv").css("height", h);
+    $("#ljGalleryDivNext").css("height", h);
+    $("header").css("height", h);
     if (w < 975) {
         // console.log("resize");
         $(".scoc-infographics-colored").css("webkit-border-bottom-left-radius", "0");
@@ -63,7 +67,7 @@ function initMapLj() {
 
     var marker = new google.maps.Marker({
         position: myLatLngMHotel,
-        map: mapIntLcs,
+        map: map,
         title: 'M Hotel'
     });
 
@@ -113,7 +117,7 @@ function initMapInt() {
         mapTypeId: window.google && google.maps.MapTypeId.ROADMAP
     };
 
-    mapIntLcs = window.map = new google.maps.Map(document.getElementById("map"), cfg);
+    var mapIntLcs = window.map = new google.maps.Map(document.getElementById("map"), cfg);
     mapIntLcs.setCenter(new google.maps.LatLng(cfg.lat, cfg.lng));
 
     var infowins = {},
