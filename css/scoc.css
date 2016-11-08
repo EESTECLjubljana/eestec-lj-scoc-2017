@@ -123,6 +123,11 @@ section#contact {
 	padding: 10px 0;
 }
 
+  .scoc-about-middle {
+	display: block;
+    position: relative;
+   }
+
 @media (min-width: 615px) {
   .navbar-right {
   	font-size: 0.69em;
@@ -147,6 +152,15 @@ section#contact {
 	.navbar-custom.affix {
 		padding: 20px 0;
 	}
+
+
+  .scoc-about-middle {
+    top: 0.6em;
+  }
+
+  .scoc-about-middle-ignore {
+  	top:0em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -167,6 +181,7 @@ section#contact {
   .navbar-custom .nav li a {
     padding: 15px 10px;
   }
+
 }
 
 #ljGalleryDiv, #ljGalleryDivNext {
