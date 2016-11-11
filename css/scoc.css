@@ -137,6 +137,16 @@ header .intro-text {
   	top:0em;
   }
 
+.scoc-vis-miss-col {
+	top:2em;
+}
+
+@media (max-width: 991px) {
+	.scoc-eestec-logo {
+		max-width:15em;
+	}
+}
+
 @media (min-width: 615px) {
   .navbar-right {
   	font-size: 0.69em;
@@ -150,6 +160,10 @@ header .intro-text {
 	header .intro-text {
 		padding-top:150px;
 	}
+
+.scoc-vis-miss-col {
+	top:2em;
+}
 
 }
 
@@ -201,6 +215,10 @@ header .intro-text {
     top: 0.6em;
   }
 
+  .scoc-vis-miss-col {
+	top:-3.4em;
+}
+
 }
 
 #ljGalleryDiv, #ljGalleryDivNext {
@@ -220,5 +238,3 @@ header .intro-text {
 #ljGalleryDivNext {
     z-index: -2000;
 }
-
-
