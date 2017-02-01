@@ -190,6 +190,10 @@ header .intro-text {
 	header .intro-text {
 		padding-top:200px;
 	}
+
+	.modal-dialog {
+		width: 60%;
+	}
 }
 
 @media (min-width: 992px) {
@@ -237,4 +241,12 @@ header .intro-text {
 }
 #ljGalleryDivNext {
     z-index: -2000;
+}
+
+.modal-company-desc {
+	font-size: 1.3em; 
+}
+
+.modal-footer  .modal-imgs {
+	padding:10px;
 }

@@ -101,6 +101,7 @@ $(document).ready(function() {
             initMapInt();
         }
     });
+    $(".cceImg").colorbox({rel:"cceImg", maxWidth:"75%", maxHeight:"75%"});
 });
 
 /*Initializes map of all Commitments*/
@@ -960,6 +961,33 @@ function initMapInt() {
             latest = infowins["madrid"];
             latest.open(mapIntLcs, markers["madrid"]);
         }
+    );
+
+    infowins["milan"] = new google.maps.InfoWindow({
+        content:'<h1 id="firstHeading" class="firstHeading">Milan</h1>' +
+                
+                '<p><img src="https://eestec.net/media/cache/c5/a8/c5a8acd338e1e4bc568af1177e5c91ea.jpg" style="float:left;margin:5px;">'+
+                '</p>'+
+                
+                '<p><a href="https://eestec.net/cities/milan/">More details</a></p>',
+        maxWidth: 250
+    });
+    markers["milan"] = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(45.4654219, 9.1859243),
+        title: 'Milan'
+    });
+    google.maps.event.addListener(
+            markers["milan"],
+            "click",
+            function () {
+                if(latest==infowins["milan"])
+                    location.href="https://eestec.net/cities/milan/";
+                if(latest)
+                    latest.close();
+                latest = infowins["milan"];
+                latest.open(map, markers["milan"]);
+            }
     );
 
     infowins["munich"] = new google.maps.InfoWindow({
