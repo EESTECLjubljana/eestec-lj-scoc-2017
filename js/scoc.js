@@ -18,6 +18,8 @@ $(window).load(function () {
         });
         // slide change: 3s
     }, 4000);
+
+
 });
 
 function resizer() {
@@ -101,7 +103,12 @@ $(document).ready(function() {
             initMapInt();
         }
     });
-    $(".cceImg").colorbox({rel:"cceImg", maxWidth:"75%", maxHeight:"75%"});
+    $(".cceImg").colorbox({
+        rel:"cceImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
 });
 
 /*Initializes map of all Commitments*/
