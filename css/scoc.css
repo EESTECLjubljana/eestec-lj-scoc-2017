@@ -147,11 +147,14 @@ header .intro-text {
 	}
 }
 
-@media (min-width: 615px) {
+@media (min-width: 767px) {
   .navbar-right {
-  	font-size: 0.69em;
-  	margin-top: 6px;
+    font-size: 0.66em;
+    margin-top: 6px;
   }
+}
+
+@media (min-width: 615px) {
 
   .navbar-custom .nav li a {
     padding: 10px 7px;
@@ -207,7 +210,7 @@ header .intro-text {
 	}
 
   .navbar-right {
-  	font-size: 0.98em;
+  	font-size: 0.9em;
   	margin-top: 0;
   }
 
