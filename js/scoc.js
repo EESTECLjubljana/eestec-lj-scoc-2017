@@ -68,7 +68,7 @@ function initMapLj() {
     var infowindowMhotel = new google.maps.InfoWindow({
         content: '<h6 style="margin:0; padding:0;">M Hotel (officials)</h6><p style="margin:0; padding:0; line-height: 1.1;">Derčeva ulica 4, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/M+Hotel/@46.0686304,14.4870343,17z/data=!3m1!4b1!4m5!3m4!1s0x476532b108e9c0d5:0xd4e08821c680fa04!8m2!3d46.068558!4d14.488737?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/mhotel_zgradba.jpg" />'
     });
-    infowindowMhotel.setZIndex(1000);
+    // infowindowMhotel.setZIndex(1000);
 
     var markerMhotel = new google.maps.Marker({
         position: myLatLngMHotel,
@@ -106,12 +106,18 @@ function initMapLj() {
         title: 'AdHoc Hostel (alumni)'
     });
 
-    infowindowTresor.open(map, markerTresor);
-    infowindowAdhoc.open(map, markerAdhoc);
+    markerTresor.addListener('click', function() {
+      infowindowTresor.open(map, markerTresor);
+    });
+
+    markerAdhoc.addListener('click', function() {
+      infowindowAdhoc.open(map, markerAdhoc);
+    });
+
     infowindowMhotel.open(map, markerMhotel);
 
-    marker.addListener('click', function() {
-        infowindowMhotel.open(map, marker);
+    markerMhotel.addListener('click', function() {
+        infowindowMhotel.open(map, markerMhotel);
     });
 
 	var center;
