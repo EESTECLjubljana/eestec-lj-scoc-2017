@@ -49,10 +49,7 @@ $(window).on('load resize', function(){
 
 /*Initializes map under LOCATION section*/
 function initMapLj() {
-    var myLatLngMHotel = {
-        lat: 46.068634,
-        lng: 14.489226
-    };
+
 
     //global variable, so it can be used for changing center of maps when window is being resized
     var map = new google.maps.Map(document.getElementById('mapLj'), {
@@ -63,20 +60,58 @@ function initMapLj() {
         }
     });
 
-    var infowindow = new google.maps.InfoWindow({
-        content: '<h6 style="margin:0; padding:0;">M Hotel</h6><p style="margin:0; padding:0; line-height: 1.1;">Derčeva ulica 4, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/M+Hotel/@46.0686304,14.4870343,17z/data=!3m1!4b1!4m5!3m4!1s0x476532b108e9c0d5:0xd4e08821c680fa04!8m2!3d46.068558!4d14.488737?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/mhotel_zgradba.jpg" />'
-    });
+    var myLatLngMHotel = {
+        lat: 46.068634,
+        lng: 14.489226
+    };
 
-    var marker = new google.maps.Marker({
+    var infowindowMhotel = new google.maps.InfoWindow({
+        content: '<h6 style="margin:0; padding:0;">M Hotel (officials)</h6><p style="margin:0; padding:0; line-height: 1.1;">Derčeva ulica 4, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/M+Hotel/@46.0686304,14.4870343,17z/data=!3m1!4b1!4m5!3m4!1s0x476532b108e9c0d5:0xd4e08821c680fa04!8m2!3d46.068558!4d14.488737?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/mhotel_zgradba.jpg" />'
+    });
+    infowindowMhotel.setZIndex(1000);
+
+    var markerMhotel = new google.maps.Marker({
         position: myLatLngMHotel,
         map: map,
-        title: 'M Hotel'
+        title: 'M Hotel (officials)'
     });
 
-    infowindow.open(map, marker);
+    var myLatLngTresor = {
+        lat: 46.052159,
+        lng: 14.504282
+    };
+
+    var infowindowTresor = new google.maps.InfoWindow({
+        content: '<h6 style="margin:0; padding:0;">Hostel Tresor (unofficials)</h6><p style="margin:0; padding:0; line-height: 1.1;">Čopova ulica 38, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/Hostel+Tresor+Ljubljana/@46.052228,14.5030842,17z/data=!3m1!4b1!4m5!3m4!1s0x47652d6227805993:0xd85cea9f221903e5!8m2!3d46.052228!4d14.5043856?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/tresor.jpg" />'
+    });
+
+    var markerTresor = new google.maps.Marker({
+        position: myLatLngTresor,
+        map: map,
+        title: 'Hostel Tresor (unofficials)'
+    });
+
+    var myLatLngAdhoc = {
+        lat: 46.048848,
+        lng: 14.505865
+    };
+
+    var infowindowAdhoc = new google.maps.InfoWindow({
+        content: '<h6 style="margin:0; padding:0;">AdHoc Hostel (alumni)</h6><p style="margin:0; padding:0; line-height: 1.1;">Cankarjevo nabrežje 27, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/AdHoc+Hostel/@46.0488667,14.5037193,17z/data=!3m1!4b1!4m5!3m4!1s0x47652d638007d551:0x5ab0f6a654fc219e!8m2!3d46.048863!4d14.505908?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/adhoc.jpg" />'
+    });
+
+    var markerAdhoc = new google.maps.Marker({
+        position: myLatLngAdhoc,
+        map: map,
+        title: 'AdHoc Hostel (alumni)'
+    });
+
+    infowindowTresor.open(map, markerTresor);
+    infowindowAdhoc.open(map, markerAdhoc);
+    infowindowMhotel.open(map, markerMhotel);
 
     marker.addListener('click', function() {
-        infowindow.open(map, marker);
+        infowindowMhotel.open(map, marker);
     });
 
 	var center;
