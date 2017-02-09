@@ -108,16 +108,19 @@ function initMapLj() {
 
     markerTresor.addListener('click', function() {
       infowindowTresor.open(map, markerTresor);
+      _paq.push(['trackEvent', 'LJ_map', 'Open', 'tresor']);
     });
 
     markerAdhoc.addListener('click', function() {
       infowindowAdhoc.open(map, markerAdhoc);
+      _paq.push(['trackEvent', 'LJ_map', 'Open', 'adhoc']);
     });
 
     infowindowMhotel.open(map, markerMhotel);
 
     markerMhotel.addListener('click', function() {
         infowindowMhotel.open(map, markerMhotel);
+        _paq.push(['trackEvent', 'LJ_map', 'Open', 'mhotel']);
     });
 
 	var center;
