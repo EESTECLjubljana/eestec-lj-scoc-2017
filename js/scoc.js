@@ -141,7 +141,7 @@ $(document).ready(function() {
         width: "80%",
         height: "80%",
         onComplete: function() {
-            _paq.push(['trackEvent', 'Menu', 'Freedom']);
+            _paq.push(['trackEvent', 'LC_map', 'Open']);
             initMapInt();
         }
     });
