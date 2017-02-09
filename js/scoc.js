@@ -1,10 +1,10 @@
 $(window).load(function () {
     var i = 0;
     var images = [
-        'img/lj/ljubljana.jpg',
-        'img/lj/ljubljana_night.jpg',
-        'img/lj/ljubljana-castle.jpg',
-        'img/lj/ljubljana-river-castle.jpg'];
+        'img/lj/ljubljana_direct.jpg',
+        'img/lj/ljubljana-cafe.jpg',
+        'img/lj/ljubljana-tromostovje.jpg',
+        'img/lj/ljubljana-odprta-kuhna.jpg'];
     $('#ljGalleryDiv').css('background-image', 'url(' + images[i] + ')');
     setInterval(function () {
         if (++i === images.length) {
