@@ -39,18 +39,23 @@
     <script type="text/javascript">
       var _paq = _paq || [];
       // tracker methods like "setCustomDimension" should be called before "trackPageView"
-      _paq.push(["setCookieDomain", "*.spring-congress.eestec.net"]);
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
         var u="//eestec-lj.org/stats/";
         _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '5']);
+        _paq.push(['setSiteId', '6']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
     <!-- End Piwik Code -->
+    <script type="text/javascript">
+        // http://developer.piwik.org/api-reference/tracking-javascript
+        // za sledenje ob ogledu vsakega bloga posebi?
+        // var tracker = window.Piwik.getTracker( "//eestec-lj.org/stats/piwik.php", 6);
+        // tracker.trackEvent(category, action, [name], [value]) 
+    </script>
 </head>
 
 <body id="page-top">
@@ -179,7 +184,7 @@
 
                 (function() { // DON'T EDIT BELOW THIS LINE
                 var d = document, s = d.createElement('script');
-                s.src = 'http://spring-congress-eestec.disqus.com/embed.js';
+                s.src = 'https://spring-congress-eestec.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
                 })();
