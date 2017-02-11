@@ -303,3 +303,40 @@ header .intro-text {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+.blog-1-krogc {
+    font-family: 'Helvetica Neue',Roboto,'Segoe UI',sans-serif;
+    font-size: 12px;
+    font-stretch: normal;
+    font-weight: 700;
+    height: 20px;
+    line-height: 16px;
+    min-width: 10px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: -6px;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 20px;
+    word-wrap: break-word;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    background-color: #029a58;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: auto;
+    display: flex!important;
+    margin: 0;
+    padding: 2px 8px 3px 7px;
+    border-color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    border-width: 0;
+}
