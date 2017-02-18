@@ -91,30 +91,30 @@ function initMapLj() {
         title: 'Hostel Tresor (unofficials)'
     });
 
-    var myLatLngAdhoc = {
-        lat: 46.048848,
-        lng: 14.505865
-    };
+    // var myLatLngAdhoc = {
+    //     lat: 46.048848,
+    //     lng: 14.505865
+    // };
 
-    var infowindowAdhoc = new google.maps.InfoWindow({
-        content: '<h6 style="margin:0; padding:0;">AdHoc Hostel (alumni)</h6><p style="margin:0; padding:0; line-height: 1.1;">Cankarjevo nabrežje 27, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/AdHoc+Hostel/@46.0488667,14.5037193,17z/data=!3m1!4b1!4m5!3m4!1s0x47652d638007d551:0x5ab0f6a654fc219e!8m2!3d46.048863!4d14.505908?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/adhoc.jpg" />'
-    });
+    // var infowindowAdhoc = new google.maps.InfoWindow({
+    //     content: '<h6 style="margin:0; padding:0;">AdHoc Hostel (alumni)</h6><p style="margin:0; padding:0; line-height: 1.1;">Cankarjevo nabrežje 27, 1000 Ljubljana</p><p style="margin:0 0 0.2em 0; padding:0; line-height: 1.1;"><a href="https://www.google.rs/maps/place/AdHoc+Hostel/@46.0488667,14.5037193,17z/data=!3m1!4b1!4m5!3m4!1s0x47652d638007d551:0x5ab0f6a654fc219e!8m2!3d46.048863!4d14.505908?hl=en" target="_blank">Open in gmaps</a></p><img src="img/location/adhoc.jpg" />'
+    // });
 
-    var markerAdhoc = new google.maps.Marker({
-        position: myLatLngAdhoc,
-        map: map,
-        title: 'AdHoc Hostel (alumni)'
-    });
+    // var markerAdhoc = new google.maps.Marker({
+    //     position: myLatLngAdhoc,
+    //     map: map,
+    //     title: 'AdHoc Hostel (alumni)'
+    // });
 
     markerTresor.addListener('click', function() {
       infowindowTresor.open(map, markerTresor);
       _paq.push(['trackEvent', 'LJ_map', 'Open', 'tresor']);
     });
 
-    markerAdhoc.addListener('click', function() {
-      infowindowAdhoc.open(map, markerAdhoc);
-      _paq.push(['trackEvent', 'LJ_map', 'Open', 'adhoc']);
-    });
+    // markerAdhoc.addListener('click', function() {
+    //   infowindowAdhoc.open(map, markerAdhoc);
+    //   _paq.push(['trackEvent', 'LJ_map', 'Open', 'adhoc']);
+    // });
 
     infowindowMhotel.open(map, markerMhotel);
 
