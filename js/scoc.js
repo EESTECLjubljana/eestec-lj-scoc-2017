@@ -154,6 +154,12 @@ $(document).ready(function() {
         maxHeight:"75%",
         trapFocus: false
     });
+    $(".sapImg").colorbox({
+        rel:"sapImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
 });
 
 /*Initializes map of all Commitments*/
