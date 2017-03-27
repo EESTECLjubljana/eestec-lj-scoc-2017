@@ -136,6 +136,13 @@ function initMapLj() {
 	});
 }
 
+$('.youtube').colorbox({iframe: true, width: 640, height: 390, href:function(){
+                    var videoId = new RegExp('[\\?&]v=([^&#]*)').exec(this.href);
+                    if (videoId && videoId[1]) {
+                      return 'http://youtube.com/embed/'+videoId[1]+'?rel=0&autoplay=1&wmode=transparent';
+                    }
+                  }});
+
 /*Popup for map of all Commitments*/
 $(document).ready(function() {
     $("#intMapBtn").colorbox({
@@ -156,6 +163,12 @@ $(document).ready(function() {
     });
     $(".sapImg").colorbox({
         rel:"sapImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
+    $(".marandImg").colorbox({
+        rel:"marandImg", 
         maxWidth:"75%", 
         maxHeight:"75%",
         trapFocus: false

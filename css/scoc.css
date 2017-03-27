@@ -340,3 +340,7 @@ header .intro-text {
     border-style: none;
     border-width: 0;
 }
+
+.modal-body {
+  text-align: justify;
+}
