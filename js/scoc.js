@@ -173,6 +173,12 @@ $(document).ready(function() {
         maxHeight:"75%",
         trapFocus: false
     });
+    $(".mbillsImg").colorbox({
+        rel:"mbillsImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
 });
 
 /*Initializes map of all Commitments*/
