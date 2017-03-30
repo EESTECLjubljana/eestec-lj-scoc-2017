@@ -180,7 +180,19 @@ $(document).ready(function() {
         trapFocus: false
     });
     $(".eurosenderImg").colorbox({
-        rel:"mbillsImg", 
+        rel:"eurosenderImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
+    $(".xlabImg").colorbox({
+        rel:"xlabImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
+    $(".ulImg").colorbox({
+        rel:"ulImg", 
         maxWidth:"75%", 
         maxHeight:"75%",
         trapFocus: false

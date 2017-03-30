@@ -410,10 +410,12 @@
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 portfolio-item" style="margin-bottom: 8em;">
-<!--             <div class="portfolio-caption">
-              <h2>University partner</h2>
-            </div> -->
-              <a href="https://www.uni-lj.si/eng/" target="_blank">
+			<a href="#ul" target="_blank" data-toggle="modal" class="portfolio-link" onclick="javascript:_paq.push(['trackEvent', 'Partners', 'Open popup', 'UL']);">
+                <div class="portfolio-hover" title="University of Ljubljana">
+                  <div class="portfolio-hover-content">
+                      <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                 </div>
                 <img src="img/partners/ul/ul_logo.png" class="img-responsive" alt="University of Ljubljana" title="University of Ljubljana" style="margin: 0 auto; height: 23em;">
               </a>
             <!-- </a> -->
@@ -546,13 +548,12 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6 portfolio-item">
-              <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <a href="#xlab" class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div> -->
-              <a href="http://www.xlab.si/" target="_blank">
+              </div>
                 <img src="img/partners/xlab/xlab_logo.png" class="img-responsive" alt="Xlab - IT company with a strong research base" title="Xlab - IT company with a strong research base" style="margin: 5em auto 0 auto; height:57px;">
               </a>
             <!-- </a> -->
@@ -1126,7 +1127,7 @@
       </div>
     </div>
 
-<div class="modal" id="eurosender" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
+	<div class="modal" id="eurosender" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
 	      <div class="modal-dialog">
 	        <div class="modal-content">
 	          <div class="modal-header">
@@ -1165,6 +1166,96 @@
 		              	<img src="img/partners/eurosender/eurosender-working-sofas-min.jpg" class="img-responsive"/>
 		              </a>
 	          	</div>  
+	        </div>
+	      </div>
+	    </div>
+    </div>
+
+    <div class="modal" id="xlab" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
+	      <div class="modal-dialog">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+	            <h2 class="modal-title text-center" id="myModalLabel">
+	            	<a href="http://www.xlab.si/" target="_blank">
+	            	Xlab
+						<i class="fa fa-external-link" aria-hidden="true" style="font-size:0.7em;"></i>
+	            	</a>
+	            </h2>
+	          </div>
+	          <div class="modal-body">
+	            <div class="clearfix"></div>
+	           <p class="modal-company-desc">XLAB designs, develops and deploys cloud computing solutions for enterprises and end users in the fields of remote customer support, 3D diagnostic imaging and 3D GIS. 
+			   </p>
+			   <h5 class="modal-company-desc">Join our team!</h5>
+			   <p class="modal-company-desc">Headquartered in Slovenia, with offices in Switzerland, the UK and the USA, <strong>we employ co-workers with a broad set of technical skills</strong>, providing support for commercial, research and open source projects, working at front and back end of applications. Our products pride themselves for simplicity of use, extendable features and possibility of integration with the existing systems, taking into account the legal constraints related to the protection of personal data. 
+			   </p>
+			   <h5 class="modal-company-desc">Open source</h5>
+			   <p class="modal-company-desc">Often less known, but picking up steam, is the fact that XLAB has been contributing to the open source community since 2009, with thousands of lines of code, released within more than 55 research projects.
+			   </p>
+			   <h5 class="modal-company-desc">Do you have what it takes?</h5>
+			   <p class="modal-company-desc">If you have experience with Ruby, Go, Java, Python, contact us at jobs@xlab.si, visit our <a href="http://www.xlab.si/careers/current-opportunities/" target="_blank">careers website</a> for more information or follow us on <a href="https://twitter.com/xlab_research" target="_blank">Twitter</a>, <a href="http://www.linkedin.com/company/xlab" target="_blank">LinkedIn</a> or <a href="https://www.facebook.com/xlab.research" target="_blank">Facebook</a>.
+			   </p>
+	          </div>
+	            
+	          <div class="modal-footer">  
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="xlabImg cboxElement" href="img/partners/xlab/xlab-group-picture.jpg" title="Xlab group photo.">
+		              	<img src="img/partners/xlab/xlab-group-picture-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>    
+	        </div>
+	      </div>
+	    </div>
+    </div>
+
+    <div class="modal" id="ul" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
+	      <div class="modal-dialog">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+	            <h2 class="modal-title text-center" id="myModalLabel">
+	            	<a href="https://www.uni-lj.si/eng/" target="_blank">
+	            	University of Ljubljana
+						<i class="fa fa-external-link" aria-hidden="true" style="font-size:0.7em;"></i>
+	            	</a>
+	            </h2>
+	          </div>
+	          <div class="modal-body">
+	            <div class="clearfix"></div>
+	           <p class="modal-company-desc">If you ask international students about their experience at the University of Ljubljana, we are sure you will get a good feedback, not just because of Slovenians natural beauty, welcoming culture, travel opportunities, but also for the quality of education at University of Ljubljana, services for students and great benefits. An education acquired at the University of Ljubljana will allow you to perform the diverse jobs of the future, where you can show your knowledge and skills, while the University’s Career Centres will prepare you for a successful ”ride” throughout your studies. You are also encouraged to get involved in numerous extracurricular activities which are provided by the University of Ljubljana. You may also apply to the University of Ljubljana as an exchange student or join us at one of our summer schools. 
+			   </p>
+			   <p class="modal-company-desc">In presentation of University of Ljubljana you will find more about services for students, Faculty of Electrical Engineering, Faculty of Computer and Information Science and student experience. 
+			   </p>
+	          </div>
+	            
+	          <div class="modal-footer">  
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="ulImg cboxElement" href="img/partners/ul/ul-speeddating-square.jpg" title="Speed dating organized in front of main University building.">
+		              	<img src="img/partners/ul/ul-speeddating-square-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="ulImg cboxElement" href="img/partners/ul/ul-bus-speeddating.jpg" title="Interactive speed dating on buses.">
+		              	<img src="img/partners/ul/ul-bus-speeddating-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="ulImg cboxElement" href="img/partners/ul/ul-lecture-in-circle.jpg" title="Lecture on University of Ljubljana.">
+		              	<img src="img/partners/ul/ul-lecture-in-circle-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="ulImg cboxElement" href="img/partners/ul/ul-networking.jpg" title="Students networking during one of entrepreneurship workshops.">
+		              	<img src="img/partners/ul/ul-networking-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>
+	          	<div class="col-md-2 col-xs-6 modal-imgs text-center">
+		              <a class="ulImg cboxElement" href="img/partners/ul/ul-round-table.jpg" title="Students round table organized at University of Ljubljana.">
+		              	<img src="img/partners/ul/ul-round-table-min.jpg" class="img-responsive"/>
+		              </a>
+	          	</div>  
+
 	        </div>
 	      </div>
 	    </div>
