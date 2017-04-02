@@ -197,6 +197,12 @@ $(document).ready(function() {
         maxHeight:"75%",
         trapFocus: false
     });
+    $(".parsekImg").colorbox({
+        rel:"parsekImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
 });
 
 /*Initializes map of all Commitments*/
