@@ -209,6 +209,18 @@ $(document).ready(function() {
         maxHeight:"75%",
         trapFocus: false
     });
+    $(".tafrImg").colorbox({
+        rel:"tafrImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
+    $(".cosylabImg").colorbox({
+        rel:"cosylabImg", 
+        maxWidth:"75%", 
+        maxHeight:"75%",
+        trapFocus: false
+    });
 });
 
 /*Initializes map of all Commitments*/
