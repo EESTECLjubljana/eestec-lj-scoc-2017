@@ -143,6 +143,30 @@ $('.youtube').colorbox({iframe: true, width: 640, height: 390, href:function(){
                     }
                   }});
 
+    // $("#scheduleImg").toggle(function()
+    //     {$(this).animate({width: "400px"}, 'slow');},
+    //     function()
+    //     {$(this).animate({width: "120px"}, 'slow');
+    // }); 
+
+$("#scheduleDropdown").click(function() {
+        $("#scheduleRow").animate({
+            height: "81em"
+        }, 'slow');
+        $("#scheduleDropdown").animate({
+            opacity: "0"
+        }, 'slow');
+        $("#scheduleDropdown").css("visibility","hidden");
+        $("#scheduleImg").css("top", "0");
+        _paq.push(['trackEvent', 'Schedule', 'Click']);
+    }
+    /*,
+    function() {
+        $("#scheduleRow").animate({
+            height: "20%"
+        }, 'slow');
+    }*/);
+
 /*Popup for map of all Commitments*/
 $(document).ready(function() {
     $("#intMapBtn").colorbox({
@@ -155,6 +179,9 @@ $(document).ready(function() {
             initMapInt();
         }
     });
+
+
+
     $(".cceImg").colorbox({
         rel:"cceImg", 
         maxWidth:"75%", 

@@ -141,10 +141,42 @@ header .intro-text {
 	top:2em;
 }
 
+#scheduleDropdown {
+    position: relative;
+    display: inline-block;
+     top: 0.1em; 
+    left: 0.6em;
+    font-size: 7em;
+    background: lightgray;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.6;
+    z-index: 10;
+    cursor: pointer;
+}
+
 @media (max-width: 991px) {
 	.scoc-eestec-logo {
 		max-width:15em;
 	}
+
+  #scheduleDropdown {
+  /*     top: 0.1em; 
+      left: 0.6em;*/
+      font-size: 4em;
+      width: 90%;
+      top:0;
+  } 
+
+  #scheduleImg {
+    top:-9em;
+  }
+
+  #scheduleRow {
+    height: 6.8em;
+  }
+
 }
 
 @media (min-width: 767px) {
@@ -164,9 +196,12 @@ header .intro-text {
 		padding-top:150px;
 	}
 
-.scoc-vis-miss-col {
-	top:2em;
-}
+  .scoc-vis-miss-col {
+  	top:2em;
+  }
+
+
+
 
 }
 
